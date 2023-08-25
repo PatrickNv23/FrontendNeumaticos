@@ -1,0 +1,27 @@
+<main class="container_shoppingCart">
+  <section class="sectionItemList">
+    <h1 class="title_sectionItemList">Carro ({{shoppingCartList.length}} productos)</h1>
+    <ng-container *ngFor="let item of shoppingCartList">
+      <app-shopping-cart-item [item]="item"></app-shopping-cart-item>
+    </ng-container>
+  </section>
+  <section class="sectionSummaryPurchase">
+    <h2 class="textSummary">Resumen de la compra</h2>
+    <div class="container_totalPrice_shoppingCart">
+      <div class="container_details_totalPrice_shoppingCart">
+        <p class="text_address">Envío a domicilio no incluido</p>
+        <div class="container_details_TotalQuantity">
+          <p class="text_quantityTotalProducts">Productos ({{shoppingCartList.length}})</p>
+          <p class="text_totalPrice">{{totalPrice | currency}}</p>
+        </div>
+        <div class="container_details_TotalPrice">
+          <p class="text_Total">Total: </p>
+          <p class="text_totalPrice">{{totalPrice | currency}}</p>
+        </div>
+      </div>
+      <button (click)="redirectToPayout()" class="btn_submit_ShoppingCart">
+        Continuar compra
+      </button>
+    </div>
+  </section>
+</main>

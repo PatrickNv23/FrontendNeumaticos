@@ -1,0 +1,62 @@
+.header {
+  width: 100%;
+  height: auto;
+}
+
+.container_header_title {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FF4013;
+}
+
+.header_title {
+  color: white;
+}
+
+.container_header_images {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header_image_logo {
+  height: 40px;
+  cursor: pointer;
+}
+
+.container_header_images_info {
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.spanShoppingCartIcon {
+  cursor: pointer;
+}
+
+.spanShoppingCartIcon:hover {
+  color: orange;
+}
+
+@media only screen and (max-width: 375px) {
+  .header_title {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .header_image_logo {
+    width: 30%;
+  }
+
+  .header_image_phone {
+    width: 50%;
+    object-fit: cover;
+  }
+}

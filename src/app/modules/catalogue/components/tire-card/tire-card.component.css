@@ -1,0 +1,69 @@
+.container_tirecard {
+  height: 550px;
+  max-height: 550px;
+  min-height: auto;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container_img_tirecard {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid gainsboro;
+}
+
+.img_tirecard {
+  width: 100%;
+  object-fit: cover;
+}
+
+.form_tirecard {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.container_info_tirecard {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 15px;
+}
+
+.info_tirecard_brand {
+  color: #767676;
+  font-size: 18px;
+}
+
+
+
+.info_tirecard_supplier {
+  font-size: 12px;
+}
+
+.info_tirecard_price {
+  font-size: 20px;
+  color: #887171;
+}
+
+
+.btn_submit_tirecard {
+  width: 90%;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  background-color: #FF6200;
+  color: white;
+  height: 40px;
+  font-size: 20px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}

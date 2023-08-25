@@ -1,0 +1,33 @@
+<div class="general_container_shoppingCartItem">
+  <div class="container_shoppingCartItem">
+    <div class="container_info_shoppingCartItem">
+      <img class="img_shoppingCartItem" [src]="item.photo" alt="">
+      <div class="container_info_item">
+        <p class="info_sp_brand">{{item.brand}}</p>
+        <p class="info_sp_code">Código: 113780997</p>
+        <p class="info_sp_description">{{item.description}}</p>
+        <p class="info_sp_supplier">Vendido por {{item.supplier}}</p>
+      </div>
+    </div>
+    <div class="aux">
+      <div class="container_price_shoppingCartItem">
+        <p class="text_itemPrice">{{item.price | currency}}</p>
+        <p class="text_addressquestion">Envío a domicilio</p>
+        <p class="text_withdrawal">Retiro en un punto</p>
+      </div>
+      <div class="container_quantity_shoppingCartItem">
+        <button (click)="decrementQuantity()" class="btn_quantity_shoppingCartItem">--</button>
+        <div class="container_text_quantity_shoppingCartItem">
+          <p class="text_quantity_shoppingCartItem">{{quantity}}</p>
+        </div>
+        <button (click)="incrementQuantity()" class="btn_quantity_shoppingCartItem">+</button>
+      </div>
+    </div>
+  </div>
+  <div class="container_finalPart_shoppingCartItem">
+    <div class="container_text_finalPart_shoppingCartItem">
+      <p class="text_saveItem">Guardar para después</p>
+      <p class="textDeleteItem">Eliminar</p>
+    </div>
+  </div>
+</div>

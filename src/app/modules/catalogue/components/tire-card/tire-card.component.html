@@ -1,0 +1,19 @@
+<div class="container_tirecard">
+  <figure class="container_img_tirecard">
+    <img class="img_tirecard" [src]="tire.photo" alt="">
+  </figure>
+  <form class="form_tirecard">
+    <div class="container_info_tirecard">
+      <h2 class="info_tirecard_brand">{{tire.brand}}</h2>
+      <p class="info_tirecard_description">{{tire.description}}</p>
+      <p class="info_tirecard_supplier">Por {{tire.supplier}}</p>
+      <p class="info_tirecard_price">{{tire.price | currency}}</p>
+    </div>
+    <button type="button" (click)="selectTire()" class="btn_submit_tirecard">
+      Agregar al Carro
+    </button>
+  </form>
+</div>
+<ng-container *ngIf="isSelected">
+  <app-modal-tire-card [selectedId]="tire.id" (action)="actions($event)"></app-modal-tire-card>
+</ng-container>

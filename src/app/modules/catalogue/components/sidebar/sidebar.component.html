@@ -1,0 +1,17 @@
+<article class="article_sidebar">
+  <section class="section_article_header">
+    <h2 class="section_article_header_h2">Neumáticos y Llantas</h2>
+    <h4 class="section_article_header_h4">Neumáticos</h4>
+  </section>
+  <section class="section_article_text_results">
+    Resultados (166)
+  </section>
+  <div class="container_filters">
+    <ng-container *ngFor="let filter of filters">
+      <app-filter-selector [filter]="filter"></app-filter-selector>
+    </ng-container>
+  </div>
+</article>
+<span (click)="changeIsOpen()" class="material-icons-outlined">
+  menu_open
+</span>

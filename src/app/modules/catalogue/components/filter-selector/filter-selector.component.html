@@ -1,0 +1,9 @@
+<ng-container *ngIf="filter.name!='Perfil'">
+  <select class="select_filter" [(ngModel)]="selectedOption" [name]="filter.name" [id]="filter.name"
+    (change)="capture()">
+    <option [value]="filter.name">{{filter.name}}</option>
+    <ng-container *ngFor="let value of filter.values">
+      <option [value]="value">{{value}}</option>
+    </ng-container>
+  </select>
+</ng-container>

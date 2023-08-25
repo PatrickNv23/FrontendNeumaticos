@@ -1,0 +1,51 @@
+<div class="container_wrapper_modal">
+  <ng-container *ngIf="isOpen">
+    <div class="container_modal">
+      <div class="header_modal">
+        <div class="header_modal_logo_subtitle">
+          <div class="header_modal_logo_subtitle_aux"><span class="material-icons-outlined check_icon_modal">
+              check_circle
+            </span>
+            <h2 class="subtitle_logo_modal">Lo que llevas en tu Carro</h2>
+          </div>
+        </div>
+        <div class="header_modal_delete_icon">
+          <span class="material-icons-outlined" (click)="action.emit(isClose)">
+            clear
+          </span>
+        </div>
+      </div>
+      <div class="container_main_modal">
+        <div class="container_aux_modal">
+          <img class="img_tire_modal"
+            src="https://otroadmin.cambiatuneumatico.com/img/subproduct-family/firestone-roadhawk-roadhawk-list.jpg"
+            alt="">
+          <div class=" container_info_main_modal">
+            <p class="info_modal_brand">GOODYEAR</p>
+            <p class="info_modal_description">Llanta 195/65R15</p>
+            <p class="info_modal_supplier">Direction Sport</p>
+          </div>
+        </div>
+        <p class="info_modal_price">S/.354.90</p>
+        <div class="container_aux_modal">
+          <div class="container_main_modal_quantity">
+            <button class="btn_quantity" (click)="decrementQuantity()">--</button>
+            <div class="container_text_quantity">
+              <p class="text_quantity">
+                {{quantity}}
+              </p>
+            </div>
+            <button class="btn_quantity" (click)="incrementQuantity()">+</button>
+          </div>
+          <p class="text_maxLongitude">Máximo 999 unidades</p>
+        </div>
+      </div>
+      <div class="container_footer_modal">
+        <div class="text_footer_modal">
+          <p (click)="action.emit(isClose)" class="p_footer_modal">Seguir comprando</p>
+          <button (click)="redirectToShoppingCart()" class="button_footer_modal_submit">Ir al Carro</button>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>

@@ -1,0 +1,19 @@
+.main_catalogue {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: #EEEEEE;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_catalogue {
+  display: flex;
+  width: 95%;
+  height: 100%;
+  margin: 8px;
+}
+
+.container_tire_catalogue {
+  width: 100%;
+}
